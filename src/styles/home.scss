@@ -1,0 +1,63 @@
+.page-home {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+
+    >img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .home-text {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin-top: 20px;
+            color: #fff;
+        }
+        
+        p:first-child {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 45px;
+
+            animation: flicker 1.5s infinite alternate;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #fff,
+                0 0 82px #fff,
+                0 0 92px #fff,
+                0 0 102px #fff,
+                0 0 151px #fff;
+            color: #fff;
+        }
+
+    }
+}
+
+@keyframes flicker{
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+    text-shadow:
+        0 0 19px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff,
+        0 0 90px #fff,
+        0 0 100px #fff,
+        0 0 150px #fff;
+
+    }
+
+    20%, 24%, 55% {        
+        text-shadow: none;
+    } 
+}

@@ -1,0 +1,52 @@
+.page-projects {
+    width: 100vw;
+    height: 100vh;
+    //text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #4EA5D9;
+
+    .content-projects {
+        display: flex;
+        align-items: center;
+
+        aside {
+            padding-left: 100px;
+
+            img {
+                overflow: hidden;
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        .content-text {
+            color: #fff;
+            margin-left: 50px;
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #333;
+                font-size: 20px;
+            }
+
+            .github-button {
+                margin-top: 20px;
+                border-radius: 8px;
+                width: 200px;
+                height: 40px;
+
+                font-weight: 500;
+
+                background: #000000;
+                border: 1px solid #000000;
+                color: #fff;
+            }
+        }
+        
+    }
+}

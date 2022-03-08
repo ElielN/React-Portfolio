@@ -1,9 +1,11 @@
 header{
     display: flex;
     width: 100vw;
+    //max-width: 1000px;
     justify-content: space-between;
-    padding: 20px 100px 10px 100px;
+    padding: 20px 200px 10px 200px;
     position: absolute;
+    z-index: 1;
 
     font-family: 'Press Start 2P', cursive;
     color: #fff;

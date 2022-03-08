@@ -1,0 +1,40 @@
+.page-about {
+    width: 100vw;
+    height: 100vh;
+    //text-align: center;
+    display: flex;
+    justify-content: center;
+    //background: #020f15;
+    background: #224870;
+
+    .content-about {
+        display: flex;
+        align-items: center;
+
+        aside {
+            padding-left: 100px;
+
+            img {
+                border-radius: 50%;
+                overflow: hidden;
+                max-width: 400px;
+                max-height: 400px;
+            }
+        }
+
+        .content-text {
+            color: #fff;
+            margin-left: 50px;
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+        
+    }
+}

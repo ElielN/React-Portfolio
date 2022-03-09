@@ -7,11 +7,10 @@ export function Home() {
     return(
         <div className="page-home">
             <img src={homeBackground} alt='Home background' />
-            <Header />
+            <Header currentPage="home"/>
             <div className="home-text">
-                <p>Eliel Souza</p>
+                <h1>Eliel Souza</h1>
                 <p>Desenvolvedor web na Doois Web</p>
-                <p>Pentester apenas por hobby nas horas vagas</p>
             </div>
         </div>
     );

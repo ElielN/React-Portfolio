@@ -1,12 +1,15 @@
 header{
     display: flex;
-    width: 100vw;
+    width: 50vw;
     //max-width: 1000px;
     justify-content: space-between;
-    padding: 20px 200px 10px 200px;
+    padding: 20px 0px 10px 0px;
     position: absolute;
     z-index: 1;
 
-    font-family: 'Press Start 2P', cursive;
+    //font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
     color: #fff;
 }

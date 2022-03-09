@@ -20,6 +20,7 @@ export function SocialMedia({socialImg, socialAlt, handleRedirect}: socialProps)
             //opacity: 1,
             //scale: 1,
             transition: {
+                //duration: 1,
                 delayChildren: 0.3,
                 staggerChildren: 0.2
             }
@@ -27,7 +28,7 @@ export function SocialMedia({socialImg, socialAlt, handleRedirect}: socialProps)
     };
 
     const item = {
-        hidden: { y: 20, opacity: 0},
+        hidden: { y: 150, opacity: 0},
         visible: {
             y:0,
             opacity:1
@@ -41,8 +42,16 @@ export function SocialMedia({socialImg, socialAlt, handleRedirect}: socialProps)
         variants={container}
         initial="hidden"
         animate="visible"
+        whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.8}
+        }}
+        whileTap={{ 
+            scale: 0.4,
+            rotate: 360
+        }}
         >
-            <motion.img src={socialImg} alt={socialAlt} variants={item}/>
+            <motion.img src={socialImg} alt={socialAlt} variants={item} transition={{duration: 0.8}}/>
         </motion.div>
     );
 };

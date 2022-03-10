@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.f753421e.css",
+    "main.js": "/React-Portfolio/static/js/main.eaf24468.js",
+    "static/media/eliel.jpeg": "/React-Portfolio/static/media/eliel.4aede3d1bb5a51f389a0.jpeg",
+    "static/media/instagramImage.svg": "/React-Portfolio/static/media/instagramImage.e9d6b5424508db6397a027a4e0fe0dd0.svg",
+    "static/media/linkedinImage.svg": "/React-Portfolio/static/media/linkedinImage.3d0b48ef132419f77dd5755d65f5018f.svg",
+    "index.html": "/React-Portfolio/index.html",
+    "static/media/gmailImage.svg": "/React-Portfolio/static/media/gmailImage.1d50dec762204799f1eed2e7616fa6ee.svg",
+    "static/media/githubImage.svg": "/React-Portfolio/static/media/githubImage.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/facebookImage.svg": "/React-Portfolio/static/media/facebookImage.78874b0288bbd89f28b1e6f857cae722.svg",
+    "main.f753421e.css.map": "/React-Portfolio/static/css/main.f753421e.css.map",
+    "main.eaf24468.js.map": "/React-Portfolio/static/js/main.eaf24468.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f753421e.css",
+    "static/js/main.eaf24468.js"
+  ]
+}

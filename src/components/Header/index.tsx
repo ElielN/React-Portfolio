@@ -16,7 +16,7 @@ export function Header ({currentPage}: headerProp) {
     const linkStyleCurrentPage = {
         textDecoration: 'none',
         color: '#fff',
-        textShadow: '0 0 21px #fff, 0 0 42px #fff, 0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff'
+        //textShadow: '0 0 21px #fff, 0 0 42px #fff, 0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff'
     };
 
     return (

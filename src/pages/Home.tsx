@@ -1,25 +1,35 @@
 import { Header } from "../components/Header";
-
-import homeBackground  from '../assets/images/home-background.jpg';
+import Typewriter from 'typewriter-effect';
 import '../styles/home.scss';
-import { useNavigate } from "react-router-dom";
 
 export function Home() {
-
-    const navigate = useNavigate();
-
-    function handleScroll() {
-        window.console.log('Tentou')
-        navigate('/about');
-    } 
-
     return(
-        <div className="page-home" onScroll={handleScroll}>
-            <img src={homeBackground} alt='Home background' />
+        <div className="page-home">
             <Header currentPage="home"/>
             <div className="home-text">
-                <h1>Eliel Souza</h1>
-                <p>Desenvolvedor web na Doois Web</p>
+                <Typewriter
+                options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 100,
+                    cursor: ''
+                }}
+                onInit={(typewriter) => {
+                    typewriter.typeString('<h1>Olá!</h1>')
+                    .pauseFor(500)
+                    .deleteAll()
+                    .typeString('<h1>Eu sou <strong class="my-name">Eliel</strong></h1>')
+                    .pauseFor(500)
+                    .deleteAll()
+                    .typeString('<h1>Sou desenvolvedor web</h1>')
+                    .pauseFor(500)
+                    .deleteAll()
+                    .typeString('<h1>E este é o meu <strong class="portfolio">Portfólio</strong>!</h1>')
+                    .pauseFor(500)
+                    .deleteAll()
+                    .start();
+                }}
+                />
             </div>
         </div>
     );

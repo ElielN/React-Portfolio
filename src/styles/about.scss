@@ -1,42 +1,90 @@
+$breakpoint-laptop: 975px;
+$breakpoint2-laptop: 835px;
+$breakpoint-mobileM: 375px;
+$breakpoint-mobileS: 320px;
+
 .page-about {
     width: 100vw;
     height: 100vh;
-    //text-align: center;
+    
     display: flex;
     justify-content: center;
-    //background: #020f15;
+    
     background: #4EA5D9;
 
     .content-about {
         display: flex;
         align-items: center;
 
+        @media screen and (max-width: $breakpoint2-laptop) {
+            flex-direction: column;
+            margin-top: 130px;
+        }
+
         aside {
             padding-left: 100px;
+
+            @media screen and (max-width: $breakpoint2-laptop) {
+                padding-left: 0px;
+                padding-bottom: 50px;
+            }
 
             img {
                 border-radius: 50%;
                 overflow: hidden;
                 max-width: 400px;
                 max-height: 400px;
+
+                @media screen and (max-width: $breakpoint-laptop) {
+                    max-width: 350px;
+                    max-height: 350px;
+                }
+
+                @media screen and (max-width: $breakpoint2-laptop) {
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+
+                @media screen and (max-width: $breakpoint-mobileM) {
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+
+                @media screen and (max-width: $breakpoint-mobileS) {
+                    max-width: 200px;
+                    max-height: 200px;
+                }
             }
         }
 
         .content-text {
             color: #fff;
             margin-left: 50px;
+            margin-right: 50px;
             font-family: 'Roboto', sans-serif;
 
             h1 {
-                font-size: 80px;
+                font-size: 8.0rem;
                 margin-bottom: 20px;
                 font-weight: 900;
+
+                @media screen and (max-width: $breakpoint-laptop) {
+                    font-size: 6.0rem;
+                }
+
+                @media screen and (max-width: $breakpoint-mobileM) {
+                    font-size: 4.5rem;
+                }
             }
 
             .about-text {
                 color: #111;
-                font-size: 20px;
+                font-size: 2.0rem;
                 font-weight: 400;
+
+                @media screen and (max-width: $breakpoint-mobileM) {
+                    font-size: 1.6rem;
+                }
 
                 &.about-text {
                     margin-top: 10px;

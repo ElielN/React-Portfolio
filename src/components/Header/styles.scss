@@ -1,15 +1,29 @@
+$breakpoint-mobileM: 375px;
+$breakpoint-mobileS: 325px;
+
 header{
     display: flex;
     width: 50vw;
-    //max-width: 1000px;
+    min-width: 345px;
+    
     justify-content: space-between;
     padding: 20px 0px 10px 0px;
     position: absolute;
     z-index: 1;
-
-    //font-family: 'Press Start 2P', cursive;
+    
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #fff;
+
+
+    @media screen and (max-width: $breakpoint-mobileM) {
+        min-width: 300px;
+        font-size: 2.0rem;
+    }
+
+    @media screen and (max-width: $breakpoint-mobileS) {
+        min-width: 270px;
+        font-size: 1.8rem;
+    }
 }

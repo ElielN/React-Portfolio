@@ -1,3 +1,8 @@
+$breakpoint-tablet: 470px;
+$breakpoint-mobileL: 415px;
+$breakpoint-mobileM: 360px;
+$breakpoint-mobileS: 300px;
+
 .page-home {
     width: 100vw;
     height: 100vh;
@@ -6,44 +11,47 @@
     display: flex;
     background: #1d1d1d;
 
-    >img {
-        width: 100vw;
-        height: 100vh;
-    }
-
     .home-text {
         position: absolute;
-        width: 100vw;
+        width: 90%;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        p {
-            //margin-top: 20px;
-
-            font-family: 'Roboto', sans-serif;
-            font-weight: 900;
-            color: #fff;
-        }
         
         h1 {
             font-family: 'Oswald', sans-serif;
-            font-size: 80px;
+            font-size: 8.0rem;
             color: #fff;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                font-size: 7.0rem;
+            }
+
+            @media screen and (max-width: $breakpoint-mobileL) {
+                font-size: 6.0rem;
+            }
+
+            @media screen and (max-width: $breakpoint-mobileM) {
+                font-size: 5.0rem;
+            }
+
+            @media screen and (max-width: $breakpoint-mobileS) {
+                font-size: 4.0rem;
+            }
 
             
             .my-name {
                 color: #00f5d4;
 
-                text-shadow: 5px 0 0 #DB3069;
+                text-shadow: 0.5rem 0 0 #DB3069;
             }
             
             .portfolio {
                 color: #DB3069;
 
-                text-shadow: 5px 0 0 #00f5d4;
+                text-shadow: 0.5rem 0 0 #00f5d4;
             }
             
         }
@@ -69,3 +77,25 @@
         text-shadow: none;
     } 
 }
+
+/* media queries */
+/* $breakpoint-tablet: 470px;
+@media screen and (max-width: $breakpoint-tablet) {
+    html {
+        font-size: 50%;
+    }
+}
+
+$breakpoint-mobileM: 375px;
+@media screen and (max-width: $breakpoint-mobileM) {
+    html {
+        font-size: 45%;
+    }
+}
+
+$breakpoint-mobileS: 320px;
+@media screen and (max-width: $breakpoint-mobileM) {
+    html {
+        font-size: 35%;
+    }
+} */

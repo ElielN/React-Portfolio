@@ -1,13 +1,37 @@
+$breakpoint-laptopL: 1440PX;
+$breakpoint-laptop: 880PX;
+$breakpoint-tablet: 700px;
+
 .page-social {
     width: 100vw;
     height: 100vh;
+
     display: flex;
     justify-content: center;
-    //background: #E69597;
+
     background: #119DA4;
 
     .content-social {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: $breakpoint-laptopL) {
+            img {
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-laptop) {
+            img {
+                max-width: 165px;
+                max-height: 165px;
+            }
+        }
     }
 }

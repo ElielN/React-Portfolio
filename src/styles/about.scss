@@ -3,12 +3,15 @@ $breakpoint2-laptop: 835px;
 $breakpoint-mobileM: 375px;
 $breakpoint-mobileS: 320px;
 
+$breakpoint-verticaloverflow: 260px;
+
 .page-about {
     width: 100vw;
     height: 100vh;
     
     display: flex;
     justify-content: center;
+    overflow: auto;
     
     background: #4EA5D9;
 
@@ -18,7 +21,7 @@ $breakpoint-mobileS: 320px;
 
         @media screen and (max-width: $breakpoint2-laptop) {
             flex-direction: column;
-            margin-top: 130px;
+            margin-top: 100px;
         }
 
         aside {

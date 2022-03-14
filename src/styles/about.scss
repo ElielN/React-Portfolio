@@ -89,6 +89,10 @@ $breakpoint-verticaloverflow: 260px;
                     font-size: 1.6rem;
                 }
 
+                @media screen and (max-width: $breakpoint-laptop) {
+                    margin-bottom: 20px;
+                }
+
                 &.about-text {
                     margin-top: 10px;
                 }
